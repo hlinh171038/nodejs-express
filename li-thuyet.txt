@@ -1,0 +1,4 @@
+Hiểu về nodejs?
+ - Ngôn ngữ javascript
+ - Nền tảng nodejs
+ - Framework Expressjs --> không chạy trên browser.
