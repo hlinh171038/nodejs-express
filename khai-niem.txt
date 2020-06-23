@@ -1,0 +1,13 @@
+ 1.so sánh Single page application(SPA) và Multiple page application
+    client --request-->server
+    client<---file.html--server
+    client---AJAX-->server
+    client <---{..}Json--server
+   - Content render in the front-end.
+   - No reloading page.
+   - interact with data via some .JSON API.
+2.Tempalte engine là gì? loại nào?
+-Là công cụ hổ trợ tác HTML thành các phần nhỏ hơn mà ta có thể sử dụng trên nhiều tập tin HTML khác.
+-Các loại chính:
+  + pug (jade). ---> pughtml.com
+  + ejs.
