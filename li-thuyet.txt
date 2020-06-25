@@ -2,4 +2,9 @@ Hiểu về nodejs?
  - Ngôn ngữ javascript
  - Nền tảng nodejs
  - Framework Expressjs --> không chạy trên browser.
+ Restart server tự động?
+ - Nodemon ---> module hổ trợ restart tự động
+ - Lưu ý: npm install --save-dev nodemon //chỉ sử dụng với mục đính dev(developer)
+ - Thêm vào script :"start":"nodemon index.js",
+ - chạy với lệnh: npm start
  
