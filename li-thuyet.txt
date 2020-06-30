@@ -7,4 +7,5 @@ Hiểu về nodejs?
  - Lưu ý: npm install --save-dev nodemon //chỉ sử dụng với mục đính dev(developer)
  - Thêm vào script :"start":"nodemon index.js",
  - chạy với lệnh: npm start
+ Tích  hợp database(lowdb)?
  
