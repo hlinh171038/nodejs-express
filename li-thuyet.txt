@@ -8,4 +8,5 @@ Hiểu về nodejs?
  - Thêm vào script :"start":"nodemon index.js",
  - chạy với lệnh: npm start
  Tích  hợp database(lowdb)?
+  + shortid để tạo ra chuổi id ngẫu nhiên
  
