@@ -27,6 +27,24 @@ module.exports.create = function(req, res){
 };
 module.exports.postCreate = function(req , res){
     req.body.id = shortid.generate();      // thư viện shortid tạ ra id ngẫu nhiên
+    var errors =[];
+    if(!req.body.name)
+    {
+        errors.push("name is requested");
+    }
+    if(!req.body.phone)
+    {
+        errors.push("phone is requested");
+    }
+    if(errors.length>0)
+    {
+        res.render('users/create',{
+            errors:errors,
+            value :req.body
+        });
+        
+        return;
+    }
     db.get('users').push(req.body).write();   // method của request lấy nội dung post
     res.redirect('/users') // method của response ddeew chuyển hướng
 };

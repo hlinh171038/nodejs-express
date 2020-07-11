@@ -1,0 +1,15 @@
+html
+  head
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css") 
+    link(href="/static/common.css" rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#') CoderX.Tokio-Linh
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavAltMarkup.collapse.navbar-collapse
+        .navbar-nav
+          a.nav-item.nav-link.active(href='/') Home 
+          a.nav-item.nav-link(href='/users') Users
+.contenter.p-5
+    block content

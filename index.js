@@ -3,6 +3,7 @@ var express= require('express');
 var userRoute = require('./routes/user-router')
 var app = express();
 var port =3000;
+app.use(express.static('public'))
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -14,6 +15,7 @@ app.get('/',function(request, response){
         name:'AAAA'
     });
 });
+
 
 app.use('/users', userRoute );
 app.listen(port, function(){
