@@ -1,9 +1,11 @@
 var express= require('express');
+var cookieParser = require('cookie-parser')
 
 var userRoute = require('./routes/user-router')
 var app = express();
 var port =3000;
 app.use(express.static('public'))
+app.use(cookieParser())
 
 app.set('view engine', 'pug');
 app.set('views', './views');
