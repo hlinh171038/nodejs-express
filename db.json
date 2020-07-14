@@ -6,57 +6,9 @@
     },
     {
       "name": "linh",
-      "id": "MFfd4gcVf"
-    },
-    {
-      "name": "Trang Trí Nội Thất",
-      "id": "HnXSgQvRy"
-    },
-    {
-      "name": "thinh",
-      "id": "_pTfdu6mj"
-    },
-    {
-      "name": "bba",
-      "id": "wENTVKSSR"
-    },
-    {
-      "name": [
-        "linh",
-        ""
-      ],
-      "id": "Hhc2-o7Xm"
-    },
-    {
-      "name": [
-        "dsdd",
-        "2442"
-      ],
-      "id": "YG3SUhO4S"
-    },
-    {
-      "name": "nam",
-      "phone": "0337222517",
-      "id": "6KAEZoKjY"
-    },
-    {
-      "phone": "",
-      "id": "W7tLPGZH4"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "cmCCWTcwh"
-    },
-    {
-      "name": "linh",
-      "phone": "0337222517",
-      "id": "9TPcPtKE_"
-    },
-    {
-      "name": "linh",
-      "phone": "0337222517",
-      "id": "3rr2za5d9"
+      "id": "MFfd4gcVf",
+      "email": "hoanglinh@gmail.com",
+      "password": "1234"
     }
   ]
 }

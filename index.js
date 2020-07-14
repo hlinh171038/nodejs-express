@@ -1,7 +1,11 @@
 var express= require('express');
 var cookieParser = require('cookie-parser')
 
-var userRoute = require('./routes/user-router')
+var userRoute = require('./routes/user-router');
+var authRoute = require('./routes/auth-route');
+
+var authController = require('./middleware/auth-middleware'); 
+
 var app = express();
 var port =3000;
 app.use(express.static('public'))
@@ -19,7 +23,8 @@ app.get('/',function(request, response){
 });
 
 
-app.use('/users', userRoute );
+app.use('/users',authController.middleware, userRoute );
+app.use('/auth', authRoute);
 app.listen(port, function(){
      console.log('Server listenning on port'+port);
 });
