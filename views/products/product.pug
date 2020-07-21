@@ -1,0 +1,22 @@
+extends ../layouts/common.pug
+block content
+    h1 Product
+    div.d-flex.w-100.ml-5.flex-wrap
+        each val,index in products
+            .card(style='width: 18rem;' class="m-3")
+                img(src=val.image).w-100.h-50
+                .card-body
+                    h5.card-title=val.name
+                    p.card-text=val.description
+                    
+                    a.btn.btn-primary(href='#') click here !
+        <nav aria-label="Page navigation example">
+        
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>            

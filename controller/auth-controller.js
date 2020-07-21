@@ -1,4 +1,4 @@
-var shortid= require('shortid');
+var md5 = require('md5');
 
 var db =  require('../views/users/db');
 
@@ -17,7 +17,8 @@ module.exports.postLogin = function(req,res,next){
         });
         return; 
     }
-    if(user.password !== password)
+    var hashPassword= md5(password);
+    if(user.password !== hashPassword)
     {
         res.render('auth/login',{
             errors: ['wrong password'],
@@ -25,7 +26,9 @@ module.exports.postLogin = function(req,res,next){
         });
         return; 
     }
-    res.cookie('userId',user.id);
+    res.cookie('userId',user.id,{
+        signed:true
+    });
     res.redirect('/users');
 
 }
