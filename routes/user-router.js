@@ -17,7 +17,6 @@ router.get('/cookie', function(req,res,next){
 router.get('/search',controller.search)
 router.get('/create',controller.create );
 router.post('/create',upload.single('avatar'),validate.validatePostCard,controller.postCreate);
-router.get('/product',controller.pro);
 router.get('/:userId', controller.get);
 
 module.exports = router;

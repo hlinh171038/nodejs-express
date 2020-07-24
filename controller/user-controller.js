@@ -40,15 +40,5 @@ module.exports.get = function(req, res){
        user:user
     })
 };
-//product------------------------------------------------------------------------------------
-module.exports.pro = function(require,response){
-    var page = parseInt(require.query.page) || 1 ; // n
-    var perpage = 8; //x
-    var count = 2;
-    var start = (page -1)*perpage;
-    var end = page*perpage;
-    response.render('products/product',{
-        products: db.get('product').value().slice(start,end),
-        count:count
-    }); 
-};
+
+

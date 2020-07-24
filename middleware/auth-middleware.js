@@ -12,5 +12,13 @@ module.exports.middleware = function(req,res,next){
        return;
    }
    res.locals.user =user;
+   let sessionId = req.signedCookies.sessionId;
+    res.locals.countCart =  Object.values(db.get("sessions")
+                             .find({ id: sessionId })
+                             .get("cart")
+                             .size()
+                             .value()).reduce((acc, cur) => acc + cur,1);
+                            
+    
    next();
 }

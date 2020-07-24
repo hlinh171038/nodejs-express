@@ -1,0 +1,12 @@
+extends ../layouts/common.pug
+block content
+    h1 tranfer
+    form( method='POST')
+        .form-group
+            label(for='account') Account
+            input#exampleInputEmail1.form-control(type='text',name='account')
+        .form-group
+            lable(for='pass') Tien
+            input#phone.form-control(type='number',name='tien')
+        
+        button.btn.btn-primary tranfer
